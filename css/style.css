@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px; /* по умолчанию */
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4b4b4b;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding-bottom: 100px;
+}
+/* ------------------------------ */
+.services {
+  padding: 110px 0;
+  background-image: url('../img/services/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -370px;
+}
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.button {
+  border: 1px solid #f2726f;
+  background: #f2726f;
+  border-radius: 8px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  padding: 12px 25px;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #f2726f;
+}
+.services__subtitle,
+.promise__subtitle {
+  margin-bottom: 33px;
+}
+.subtitle {
+  color: #5d62b5;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  padding-left: 33px;
+  position: relative;
+}
+
+.subtitle::before {
+  content: url('../img/services/icon.svg');
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.services__title,
+.promise__title {
+  margin-bottom: 78px;
+}
+.title {
+  color: #000;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.services__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 66px;
+}
+.services__item {
+  max-width: 324px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px 44px 50px 43px;
+  margin-bottom: 24px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.services__item:hover {
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24))
+    drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.services__item-icon {
+  margin-bottom: 33px;
+}
+.services__item-title,
+.promise__item-title {
+  margin-bottom: 20px;
+  color: #f2726f;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.4;
+}
+.services__item-text p,
+.promise__item-text p {
+  letter-spacing: 0.15px;
+}
+.services__button-inner {
+  text-align: center;
+}
+.promise {
+  padding: 0 0 120px;
+}
+.promise__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.promise__item {
+  max-width: 324px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.promise__item-icon {
+  margin-right: 23px;
+}
+
+.impact {
+  color: #fff;
+  padding: 112px 0 79px;
+  background: #29c3be url('../img/impact/bg.png') 88% top / 50% no-repeat;
+}
+.impact__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 79px;
+}
+.impact__box {
+  max-width: 411px;
+  width: 100%;
+}
+.impact__subtitle {
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 32px;
+  padding-left: 33px;
+  position: relative;
+}
+.impact__subtitle::before {
+  content: url('../img/impact/icon.svg');
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.impact__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.impact__image {
+  max-width: 498px;
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin-top: -192px;
+}
+.impact__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 134px;
+}
+.impact__item {
+  display: flex;
+}
+.impact__item-icon {
+  margin-right: 11px;
+}
+.impact__item-num {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.impact__item-text {
+  color: #5d62b5;
+  letter-spacing: 0.15px;
+  font-weight: 700;
+}
+.more__inner {
+  background: #5d62b5;
+  border-radius: 20px;
+  padding: 43px 76px 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -75px;
+}
+.more__text {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.25;
+  max-width: 562px;
+  width: 100%;
+  color: #fff;
+}
+.more__button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
